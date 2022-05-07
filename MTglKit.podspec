@@ -24,9 +24,10 @@ Pod::Spec.new do |s|
   s.vendored_libraries ='lib/**/*.a'
   s.source_files  = 'lib/BDSClientHeaders/*.h'
 
-  s.resource_bundles = ['**/BDSClientResource/ASR/BDSClientEASRResources/*','**/BDSClientResource/ASR/BDSClientResources/**/*']
+  s.resource = ['**/BDSClientResource/ASR/BDSClientEASRResources/*','**/BDSClientResource/ASR/BDSClientResources/**/*']
 
   s.frameworks = 'AudioToolbox','AVFoundation','CFNetwork','CoreLocation','CoreTelephony','SystemConfiguration','GLKit',
   s.library = 'z','c++','sqlite'
+  # s.library = 'z','c++'
 
 end
