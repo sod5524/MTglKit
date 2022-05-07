@@ -1,0 +1,6 @@
+framework module MTglKit {
+  umbrella header "MTglKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_MTglKit_Tests {
+  umbrella header "Pods-MTglKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

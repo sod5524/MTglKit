@@ -21,8 +21,10 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.platform     = :ios, "9.0"
-  s.vendored_frameworks ='**/*.framework'
-  s.source_files  = '**/**.framework/Headers/*.h'
+  s.vendored_libraries ='lib/**/*.a'
+  s.source_files  = 'lib/BDSClientHeaders/*.h'
+
+  s.resource_bundles = ['**/BDSClientResource/ASR/BDSClientEASRResources/*','**/BDSClientResource/ASR/BDSClientResources/**/*']
 
   s.frameworks = 'AudioToolbox','AVFoundation','CFNetwork','CoreLocation','CoreTelephony','SystemConfiguration','GLKit',
   s.library = 'z','c++','sqlite'
